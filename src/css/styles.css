@@ -1,0 +1,253 @@
+::selection
+{
+	background: transparent;
+	color:red;
+}
+body
+{
+	margin:0;
+	font-family: arial;
+	background: slateblue;
+}
+input,button,a
+{
+	padding: 10px;
+	text-decoration: none;
+	outline:0;
+	border:0;
+}
+h1
+{
+	margin:0;
+	font-weight: normal;
+}
+
+header
+{
+	line-height: 10vh;
+	display: flex;
+	background: black;
+	color:white;
+	justify-content: space-around;
+}
+header a
+{
+	color:silver;
+}
+header a:hover
+{
+	color:white;
+}
+
+
+footer
+{
+	line-height: 10vh;
+	background: black;
+	color:white;
+	text-align: center;
+}
+
+.container
+{
+	height: 80vh;
+	overflow: auto;
+}
+
+main
+{
+	display: flex;
+}
+main .left
+{
+	width: 20%;
+}
+main .left p
+{
+	background: black;
+	color:white;
+	margin:10px;
+	padding: 10px;
+	border-radius: 100px;
+}
+main .left p span
+{
+	float: right;
+}
+main .left p:hover,
+main .left p.active
+{
+	background: white;
+	color:black;
+}
+
+main .right
+{
+	width: 80%;
+}
+main .right .filters
+{	
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+}
+main .right .filters button.active
+{
+	background: black;
+	color:white;
+}
+main .right .products
+{
+	height: 70vh;
+	overflow: auto;
+}
+main .right .products .item
+{
+	display: inline-table;
+	margin:1%;
+	padding: 1%;
+	background: white;
+	width: 15%;
+	position: relative;
+}
+main .right .products .item img
+{
+	width: 100%;
+}
+main .right .products .item .tags
+{
+	position: absolute;
+	top:0;
+	left:0;
+	padding: 10px;
+	background: black;
+	color:white;
+}
+
+main .right .products .item .cart-btn
+{
+	cursor: pointer;
+	position: absolute;
+	bottom:0;
+	right:0;
+	padding: 10px;
+	background: black;
+	color:white;
+}
+
+main .right .products .item .discount
+{
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	right:0;
+	padding: 10px;
+	background:yellow;
+}
+
+
+
+
+.form
+{
+	background: white;
+	width: 30%;
+	margin:1% auto;
+	padding: 1%;
+	box-shadow:0 10px 10px black;
+}
+.form .form-flex
+{
+	display: flex;
+	align-items: center;
+}
+.form .form-flex input
+{
+	border-bottom: 1px solid #000;
+	width: 100%;
+}
+.form button
+{
+	width: 100%;
+	background: black;
+	color:white;
+	margin-top: 10px;
+}
+
+.wrapper
+{
+	padding:2% 5%;
+}
+
+.wrapper table
+{
+	background: white;
+	width: 100%;
+	text-align: center;
+}
+.wrapper table thead
+{
+	background: black;
+	color:white;
+}
+.wrapper table thead th
+{
+	position: sticky;
+	top:0;
+	background: #333;
+	color:white;
+}
+
+
+.card
+{
+	background: white;
+	display: inline-table;
+	padding: 2%;
+	box-shadow:10px 10px 10px black;
+}
+.card button
+{
+	background: black;
+	color:white;
+}
+
+.wrapper.error 
+{
+	background: url("https://img.freepik.com/free-vector/page-404-with-people_81894-2952.jpg?size=338&ext=jpg");
+	height: 70vh;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.details
+{
+	text-align: center;
+}
+.flex
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-align: left;
+}
+.flex img
+{
+	width: 300px;
+}
+.flex .right h1
+{
+	padding: 5px;
+	margin:2px;
+	background: #333;
+	font-size: 18px;
+	color:white;
+}
+.flex .right a
+{
+	background: black;
+	color:white;
+	margin-top:20px;
+	display: inline-table;
+}
