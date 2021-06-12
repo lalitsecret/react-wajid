@@ -10,7 +10,7 @@ function App(props)
 
 	let {loggedin}=state
 	return <div className="item">
-		<img width="100" src={product.image} alt=""/>
+		<img width="100" src={require("./"+product.image)} alt=""/>
 		<div>{product.title}</div>
 		<div>{product.old}</div>
 		<div>{product.new}</div>
